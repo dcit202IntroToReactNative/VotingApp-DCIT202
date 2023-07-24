@@ -22,7 +22,10 @@
     "react-dom": "18.2.0",
     "react-native": "0.71.8",
     "react-native-web": "~0.18.10",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "react-native-reanimated": "~2.14.4",
+    "@react-navigation/native": "5.9.0",
+    "@react-navigation/bottom-tabs": "5.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
