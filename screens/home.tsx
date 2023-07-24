@@ -7,8 +7,6 @@ const Separator = () => <View style={styles.separator} />;
 export default function HomeScreen({navigation} : any) {
   return (
     <React.Fragment>
-      <ProminentAppBar />
-
       <View style={{ flex: 1, justifyContent: "center", display: "flex" }}>
         <View
           style={{
@@ -23,12 +21,12 @@ export default function HomeScreen({navigation} : any) {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => {navigation.navigate("President")}}>
             <View style={styles.buttonhall}>
               <Text style={styles.title}>Hall</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => {navigation.navigate("President")}}>
             <View style={styles.buttonDep}>
               <Text style={styles.title}>Department</Text>
             </View>

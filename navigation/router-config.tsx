@@ -7,6 +7,8 @@ import { SafeAreaView } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Settings from "../screens/profile";
 import PresidentScreen from "../screens/President";
+import SecretaryScreen from "../screens/Secretary";
+import VicePresidentScreen from "../screens/vice";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +24,8 @@ const RouterConfig = () => {
         {/* New screen that includes the Tab.Navigator */}
         <Stack.Screen name="MainScreen" component={MainScreen} />
         <Stack.Screen name="President" component={PresidentScreen} />
+        <Stack.Screen name="Vice President" component={VicePresidentScreen} />
+        <Stack.Screen name="Secretary" component={SecretaryScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>
@@ -31,9 +35,9 @@ const RouterConfig = () => {
 // MainScreen to include the Tab.Navigator
 const MainScreen = () => {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}>
+    <Tab.Navigator screenOptions={{ headerShown: true }}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Settings" component={Settings} />
+      <Tab.Screen name="Profile" component={Settings} />
     </Tab.Navigator>
   );
 };
