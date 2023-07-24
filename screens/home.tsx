@@ -59,11 +59,4 @@ const styles = StyleSheet.create({
   },
 });
 
-    // title: {
-  //   textAlign: 'center',
-  //   marginVertical: 8,
-  // },
-  // fixToText: {
-  //   flexDirection: 'row',
-  //   justifyContent: 'space-between',
-  // },
+   
