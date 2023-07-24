@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import { Avatar } from '@mui/material';
+import { Person2Rounded } from '@mui/icons-material';
 
 const Separator = () => <View style={styles.separator} />;
 
@@ -16,12 +18,12 @@ export default function PresidentScreen({navigation} : any) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="https://static.generated.photos/vue-static/face-generator/landing/wall/12.jpg"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Kofi
+          Kofi Asare-Amankwah
         </Typography>
       </CardContent>
       <CardActions>
@@ -32,12 +34,12 @@ export default function PresidentScreen({navigation} : any) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&w=1000&q=80"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Kofi
+          Kelvin Amponsah
         </Typography>
       </CardContent>
       <CardActions>

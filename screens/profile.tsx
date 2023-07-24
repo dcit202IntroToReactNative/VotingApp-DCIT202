@@ -10,10 +10,10 @@ export default function ProfileScreen() {
         <Avatar   sx={{ width: 150, height: 150 }}>
             <Person2Rounded sx={{ fontSize: 70 }}/>
         </Avatar>
-        <Text>Name</Text>
-        <Text>Student ID Number</Text>
-        <Text>Programme of Study</Text>
-        <Text>Hall of Residence</Text>
+        <Text style={styles.title}>Name</Text>
+        <Text style={styles.title}>Student ID Number</Text>
+        <Text style={styles.title}>Programme of Study</Text>
+        <Text style={styles.title}>Hall of Residence</Text>
       </View>
     );
   }
@@ -21,5 +21,10 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
     container : {
         flex : 1
-    }
+    },
+    title: {
+        textAlign: 'center',
+        marginVertical: 25,
+        fontSize:25,
+      },
 });
