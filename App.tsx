@@ -1,15 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FolderIcon from '@mui/icons-material/Folder';
-import Home from '@mui/icons-material/Restore';
+import House from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import HomeScreen from './screens/home';
 import PresidentScreen from './screens/President';
 import ProfileScreen from './screens/profile';
 import React from 'react';
+import { Paper } from '@mui/material';
+import ProminentAppBar from './components/TopAppBar';
 
 
 export default function App() {
@@ -21,19 +21,14 @@ export default function App() {
 
   return (
   <View>
-  <div style={{}}>
-  <HomeScreen/>
-  </div>
-  <BottomNavigation style={styles.container}
-    showLabels
-    value={value}
-    onChange={(event, newValue) => {
-    setValue(newValue);}}
->
-  <BottomNavigationAction label="Home" icon={<Home />} />
-  <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-  <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-</BottomNavigation>
+    <HomeScreen/>
+  <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+      <BottomNavigation showLabels value={value} onChange={(event, newValue) => {setValue(newValue);}}>
+          <BottomNavigationAction label="Home" icon={<House/>}/>
+          <BottomNavigationAction label="Ballot" icon={<FavoriteIcon/>}/>
+          <BottomNavigationAction label="Profile" icon={<LocationOnIcon />}/>
+        </BottomNavigation>
+    </Paper>
 </View>
   );
 }
