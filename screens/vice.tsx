@@ -10,7 +10,7 @@ import React from 'react';
 
 const Separator = () => <View style={styles.separator} />;
 
-export default function VicePresidentScreen() {
+export default function VicePresidentScreen({navigation} : any) {
   return (
     <View style={styles.container}>
     <Card sx={{ maxWidth: 345 }}>
@@ -25,7 +25,7 @@ export default function VicePresidentScreen() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="large" style={styles.button}>Vote</Button>
+        <Button size="large" style={styles.button} onClick={() => {navigation.navigate("Secretary")}}>Vote</Button>
       </CardActions>
     </Card>
     <Separator/>
@@ -41,7 +41,7 @@ export default function VicePresidentScreen() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="large" style={styles.button}>Vote</Button>
+        <Button size="large" style={styles.button} onClick={() => {navigation.navigate("Secretary")}}>Vote</Button>
       </CardActions>
     </Card>
     

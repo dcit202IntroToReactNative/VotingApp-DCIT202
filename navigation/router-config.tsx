@@ -37,8 +37,8 @@ const RouterConfig = () => {
 // MainScreen to include the Tab.Navigator
 const MainScreen = () => {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: true, tabBarActiveBackgroundColor: '#A7FFEB', tabBarActiveTintColor:'black' }}>
-      <Tab.Screen name="Home" component={Home} options={{tabBarLabel: 'Home', tabBarIcon: ({ color }) => (
+    <Tab.Navigator screenOptions={{ headerShown: true ,tabBarActiveBackgroundColor: '#A7FFEB', tabBarActiveTintColor:'black' }}>
+      <Tab.Screen name="Home" component={Home} options={{tabBarLabel: 'Home', tabBarIcon: ({ color}) => (
         <HomeIcon/>
         ),
       }} />
