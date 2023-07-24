@@ -48,7 +48,6 @@ export default function SecretaryScreen({navigation} : any) {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -56,7 +55,8 @@ const styles = StyleSheet.create({
       alignContent:'center',
       marginHorizontal:20
     },
-    button:{
+  
+     button:{
       height:50,
       width:350,
       borderRadius:15,
