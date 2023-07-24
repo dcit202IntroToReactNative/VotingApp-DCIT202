@@ -4,6 +4,8 @@ import ProminentAppBar from "../components/TopAppBar";
 
 const Separator = () => <View style={styles.separator} />;
 
+//const Tab = createBottomTabNavigator();
+
 export default function HomeScreen({navigation} : any) {
   return (
     <React.Fragment>

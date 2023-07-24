@@ -13,7 +13,7 @@ const Separator = () => <View style={styles.separator} />;
 export default function PresidentScreen({navigation} : any) {
   return (
     <View style={styles.container}>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 346 }}>
       <CardMedia
         sx={{ height: 140 }}
         image="/static/images/cards/contemplative-reptile.jpg"
