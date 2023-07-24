@@ -33,8 +33,6 @@
   
   * Voting for Candidates
     - Vote for Candidates when an admin uploads them unto the server
-  * Sync Voting
-    - While you vote, your ballots is stored in another page so you can see the candidates you voted for
   * Available on all versions of android
   
   ## How To Use
