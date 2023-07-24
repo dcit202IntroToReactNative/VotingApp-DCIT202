@@ -17,7 +17,7 @@ export default function HomeScreen({navigation} : any) {
             paddingHorizontal: 20,
           }}
         >
-          <TouchableOpacity onPress={() => {navigation.navigate("SRC")}}>
+          <TouchableOpacity onPress={() => {navigation.navigate("President")}}>
             <View style={styles.button}>
               <Text style={styles.title}>SRC</Text>
             </View>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 100,
-    width: "85%",
+    width: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    width: "85%",
+    width: "100%",
     borderRadius: 15,
     backgroundColor: "#B9F6CA",
   },
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    width: "85%",
+    width: "100%",
     borderRadius: 15,
     backgroundColor: "#CCFF90",
   },
