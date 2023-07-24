@@ -16,12 +16,12 @@ export default function SecretaryScreen({navigation} : any) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-6.jpg"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Kofi
+          Kwame Danso
         </Typography>
       </CardContent>
       <CardActions>
@@ -32,12 +32,12 @@ export default function SecretaryScreen({navigation} : any) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="https://static.generated.photos/vue-static/face-generator/landing/wall/14.jpg"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Kofi
+          Kwabena Koranteng
         </Typography>
       </CardContent>
       <CardActions>
